@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reservationCell" id="zUs-dc-z6s" customClass="reservationCell" customModule="PS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zUs-dc-z6s" id="tUu-hW-DQS">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="00지점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mmd-Sj-qgC">
+                        <rect key="frame" x="16" y="14" width="75" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Mmd-Sj-qgC" secondAttribute="height" multiplier="4:1" id="Caj-g4-90U"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="상태" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4D-rB-EHw">
+                        <rect key="frame" x="315" y="14" width="44" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="W4D-rB-EHw" secondAttribute="height" multiplier="2:1" id="5o9-vB-c7M"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbU-uo-G6n">
+                        <rect key="frame" x="142.5" y="15.5" width="90.5" height="19.5"/>
+                        <attributedString key="attributedText">
+                            <fragment content="2018-04-04">
+                                <attributes>
+                                    <font key="NSFont" metaFont="system" size="16"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="예약현황" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKE-Gf-LSQ">
+                        <rect key="frame" x="315" y="0.0" width="52" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kbU-uo-G6n" firstAttribute="centerY" secondItem="tUu-hW-DQS" secondAttribute="centerY" id="EG5-Mu-nN0"/>
+                    <constraint firstItem="kbU-uo-G6n" firstAttribute="centerX" secondItem="tUu-hW-DQS" secondAttribute="centerX" id="GWM-1u-k1J"/>
+                    <constraint firstItem="Mmd-Sj-qgC" firstAttribute="leading" secondItem="tUu-hW-DQS" secondAttribute="leading" constant="16" id="SrQ-4h-Gb0"/>
+                    <constraint firstAttribute="trailing" secondItem="W4D-rB-EHw" secondAttribute="trailing" constant="16" id="f9i-fz-tvx"/>
+                    <constraint firstItem="W4D-rB-EHw" firstAttribute="top" secondItem="CKE-Gf-LSQ" secondAttribute="bottom" constant="1" id="nfd-Wi-rYb"/>
+                    <constraint firstItem="Mmd-Sj-qgC" firstAttribute="centerY" secondItem="kbU-uo-G6n" secondAttribute="centerY" id="oDx-ma-mdW"/>
+                    <constraint firstItem="W4D-rB-EHw" firstAttribute="centerY" secondItem="tUu-hW-DQS" secondAttribute="centerY" constant="5" id="rcW-e4-ELL"/>
+                    <constraint firstItem="CKE-Gf-LSQ" firstAttribute="centerX" secondItem="W4D-rB-EHw" secondAttribute="centerX" id="wqq-58-5tM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateText" destination="kbU-uo-G6n" id="LWD-wQ-SrV"/>
+                <outlet property="shopNameText" destination="Mmd-Sj-qgC" id="zyn-YP-uFv"/>
+                <outlet property="statusText" destination="W4D-rB-EHw" id="1eP-Fa-Snx"/>
+            </connections>
+            <point key="canvasLocation" x="2.5" y="49"/>
+        </tableViewCell>
+    </objects>
+</document>

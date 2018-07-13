@@ -3,11 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>SchemeUserState</key>
+	<dict/>
+	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>PS.xcscheme</key>
+		<key>4F611E0D207C52C700A36115</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4F611E24207C52C900A36115</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4F611E2F207C52C900A36115</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
